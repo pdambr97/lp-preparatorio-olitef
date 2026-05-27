@@ -19,7 +19,6 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--fb);background:var(--white);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:0.9rem 2.5rem;display:flex;align-items:center;justify-content:space-between;transition:all 0.3s}
 nav.scrolled{background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--ink6);box-shadow:0 2px 16px rgba(13,92,46,0.07)}
 .logo{display:flex;align-items:center;gap:0.55rem;text-decoration:none}
@@ -31,7 +30,6 @@ nav.scrolled{background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border
 .nav-btn{background:var(--g1);color:white;font-family:var(--fd);font-weight:700;font-size:0.85rem;padding:0.55rem 1.35rem;border-radius:100px;border:none;cursor:pointer;transition:all 0.2s}
 .nav-btn:hover{background:var(--g2);transform:translateY(-1px);box-shadow:0 4px 14px rgba(13,92,46,0.25)}
 
-/* HERO */
 .hero{min-height:100vh;background:var(--g7);position:relative;overflow:hidden;padding-top:76px;display:flex;align-items:center}
 .hero-blob1{position:absolute;top:-120px;right:-100px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(45,206,122,0.13) 0%,transparent 70%);pointer-events:none}
 .hero-blob2{position:absolute;bottom:-80px;left:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(13,92,46,0.07) 0%,transparent 70%);pointer-events:none}
@@ -41,8 +39,6 @@ nav.scrolled{background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border
 .hero-tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--g4);flex-shrink:0}
 h1{font-family:var(--fd);font-size:clamp(2.4rem,4.2vw,3.7rem);font-weight:800;line-height:1.05;letter-spacing:-0.04em;color:var(--ink);margin-bottom:1.35rem}
 h1 .accent{color:var(--g2)}
-h1 .wave{display:inline-block;position:relative}
-h1 .wave::after{content:"";position:absolute;left:0;bottom:-4px;right:0;height:4px;background:linear-gradient(90deg,var(--g4),var(--g2));border-radius:4px}
 .hero-sub{font-size:1.05rem;color:var(--ink3);line-height:1.75;max-width:480px;margin-bottom:2.25rem;font-weight:400}
 .hero-sub strong{font-weight:700;color:var(--ink)}
 .hero-btns{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2.5rem}
@@ -55,21 +51,17 @@ h1 .wave::after{content:"";position:absolute;left:0;bottom:-4px;right:0;height:4
 .hstat-n{font-family:var(--fd);font-size:1.65rem;font-weight:800;color:var(--g1);letter-spacing:-0.04em;line-height:1}
 .hstat-l{font-size:0.8rem;color:var(--ink4);margin-top:0.25rem;font-weight:500}
 .hstat-div{width:1px;height:36px;background:var(--ink6)}
-
-/* HERO CARDS */
 .hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .hcard{background:white;border:1.5px solid var(--ink6);border-radius:var(--radius-lg);padding:1.4rem;transition:all 0.25s;position:relative;overflow:hidden}
 .hcard:hover{border-color:var(--g3);transform:translateY(-2px);box-shadow:0 10px 30px rgba(13,92,46,0.1)}
-.hcard.wide{grid-column:span 2}
 .hcard.highlight{background:var(--g1);border-color:var(--g1)}
 .hcard-icon{font-size:1.6rem;margin-bottom:0.75rem;display:block}
-.hcard h4{font-family:var(--fd);font-size:0.92rem;font-weight:700;color:var(--ink);margin-bottom:0.3rem;letter-spacing:-0.01em}
+.hcard h4{font-family:var(--fd);font-size:0.92rem;font-weight:700;color:var(--ink);margin-bottom:0.3rem}
 .hcard.highlight h4{color:white}
 .hcard p{font-size:0.82rem;color:var(--ink4);line-height:1.5}
 .hcard.highlight p{color:rgba(255,255,255,0.65)}
 .hcard-medal{position:absolute;top:12px;right:12px;background:var(--gold-bg);border:1px solid rgba(200,148,10,0.25);color:var(--gold);font-size:0.7rem;font-weight:700;padding:0.2rem 0.55rem;border-radius:100px;font-family:var(--fd)}
 
-/* SECTIONS */
 section{padding:5.5rem 2.5rem}
 .wrap{max-width:1140px;margin:0 auto}
 .sec-label{font-family:var(--fd);font-size:0.73rem;font-weight:800;letter-spacing:0.13em;text-transform:uppercase;color:var(--g3);margin-bottom:0.55rem}
@@ -77,7 +69,6 @@ section{padding:5.5rem 2.5rem}
 .sec-title .accent{color:var(--g2)}
 .sec-sub{font-size:1rem;color:var(--ink3);line-height:1.75;font-weight:400}
 
-/* POR QUE A REAL GRANA */
 .porq-sec{background:var(--g1);color:white;position:relative;overflow:hidden}
 .porq-sec::after{content:"REAL GRANA";position:absolute;right:-60px;bottom:-40px;font-family:var(--fd);font-size:10rem;font-weight:800;color:rgba(255,255,255,0.04);letter-spacing:-0.05em;pointer-events:none;white-space:nowrap}
 .porq-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:center;position:relative;z-index:1}
@@ -90,7 +81,7 @@ section{padding:5.5rem 2.5rem}
 .pp h4{font-family:var(--fd);font-size:0.95rem;font-weight:700;color:white;margin-bottom:0.25rem}
 .pp p{font-size:0.85rem;color:rgba(255,255,255,0.5);line-height:1.55}
 .escola-box{background:rgba(45,206,122,0.08);border:1.5px solid rgba(45,206,122,0.2);border-radius:var(--radius-lg);padding:2rem}
-.escola-box h3{font-family:var(--fd);font-size:1.2rem;font-weight:800;color:white;margin-bottom:0.75rem;letter-spacing:-0.02em}
+.escola-box h3{font-family:var(--fd);font-size:1.2rem;font-weight:800;color:white;margin-bottom:0.75rem}
 .escola-box p{font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.65;margin-bottom:1.5rem}
 .escola-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem}
 .etag{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);color:rgba(255,255,255,0.7);font-size:0.78rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:100px;font-family:var(--fd)}
@@ -99,18 +90,15 @@ section{padding:5.5rem 2.5rem}
 .stat-mini-n{font-family:var(--fd);font-size:1.8rem;font-weight:800;color:var(--g4);letter-spacing:-0.04em}
 .stat-mini-l{font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:0.2rem}
 
-/* DIFERENCIAIS */
 .dif-sec{background:var(--white)}
 .dif-header{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:end;margin-bottom:2.75rem}
 .dif-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem}
-.dc{background:var(--g7);border:1.5px solid var(--ink6);border-radius:var(--radius-lg);padding:1.65rem;transition:all 0.25s;position:relative;overflow:hidden;cursor:default}
+.dc{background:var(--g7);border:1.5px solid var(--ink6);border-radius:var(--radius-lg);padding:1.65rem;transition:all 0.25s;cursor:default}
 .dc:hover{border-color:var(--g3);background:white;transform:translateY(-3px);box-shadow:0 12px 32px rgba(13,92,46,0.09)}
-.dc-icon{width:50px;height:50px;border-radius:14px;background:var(--g6);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.15rem;border:1.5px solid var(--ink6);transition:background 0.2s}
-.dc:hover .dc-icon{background:var(--g5)}
+.dc-icon{width:50px;height:50px;border-radius:14px;background:var(--g6);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.15rem;border:1.5px solid var(--ink6)}
 .dc h4{font-family:var(--fd);font-size:0.97rem;font-weight:700;color:var(--ink);margin-bottom:0.45rem}
 .dc p{font-size:0.85rem;color:var(--ink4);line-height:1.6}
 
-/* JORNADA */
 .jornada-sec{background:var(--g7)}
 .journey{max-width:700px;margin:3rem auto 0;position:relative}
 .journey::before{content:"";position:absolute;left:26px;top:52px;bottom:52px;width:2px;background:linear-gradient(to bottom,var(--g2),var(--g5))}
@@ -121,7 +109,6 @@ section{padding:5.5rem 2.5rem}
 .jbody h4{font-family:var(--fd);font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:0.3rem}
 .jbody p{font-size:0.88rem;color:var(--ink4);line-height:1.6}
 
-/* DEPOIMENTOS */
 .dep-sec{background:white}
 .dep-proof{display:flex;gap:1.5rem;align-items:center;background:var(--g7);border:1.5px solid var(--ink6);border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:2.75rem;max-width:660px}
 .dep-proof-img{width:88px;height:108px;border-radius:12px;object-fit:cover;flex-shrink:0;border:2px solid var(--ink6)}
@@ -143,7 +130,6 @@ section{padding:5.5rem 2.5rem}
 .dname{font-family:var(--fd);font-size:0.87rem;font-weight:700;color:var(--ink)}
 .drole{font-size:0.77rem;color:var(--ink5);margin-top:0.05rem}
 
-/* PLANOS */
 .planos-sec{background:var(--ink)}
 .planos-sec .sec-label{color:var(--g4)}
 .planos-sec .sec-title{color:white}
@@ -157,19 +143,18 @@ section{padding:5.5rem 2.5rem}
 .pprice small{font-size:0.85rem;color:rgba(255,255,255,0.3);font-weight:400}
 .pperiod{font-size:0.8rem;color:rgba(255,255,255,0.3);margin:0.3rem 0 1.35rem}
 .pitems{list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:auto;padding-bottom:1.75rem}
-.pitems li{display:flex;align-items:flex-start;gap:0.55rem;font-size:0.86rem;color:rgba(255,255,255,0.62);line-height:1.45;font-family:var(--fb)}
+.pitems li{display:flex;align-items:flex-start;gap:0.55rem;font-size:0.86rem;color:rgba(255,255,255,0.62);line-height:1.45}
 .pitems li::before{content:"✓";color:var(--g4);font-weight:800;flex-shrink:0;margin-top:0.05rem;font-family:var(--fd)}
 .pitems li.off{color:rgba(255,255,255,0.2)}
 .pitems li.off::before{content:"—";color:rgba(255,255,255,0.15)}
-.pbtn{width:100%;font-family:var(--fd);font-weight:700;font-size:0.92rem;padding:0.82rem;border-radius:100px;cursor:pointer;text-transform:uppercase;letter-spacing:0.03em;transition:all 0.2s;margin-top:0;text-decoration:none;display:block;text-align:center}
+.pbtn{width:100%;font-family:var(--fd);font-weight:700;font-size:0.92rem;padding:0.82rem;border-radius:100px;cursor:pointer;text-transform:uppercase;letter-spacing:0.03em;transition:all 0.2s;text-decoration:none;display:block;text-align:center;border:none}
 .pbtn.out{background:transparent;color:rgba(255,255,255,0.55);border:1.5px solid rgba(255,255,255,0.15)}
 .pbtn.out:hover{border-color:rgba(255,255,255,0.4);color:white}
-.pbtn.fill{background:var(--g2);color:white;border:none}
+.pbtn.fill{background:var(--g2);color:white}
 .pbtn.fill:hover{background:var(--g3);transform:translateY(-1px);box-shadow:0 6px 20px rgba(45,206,122,0.3)}
 .desconto-note{background:rgba(45,206,122,0.07);border:1px solid rgba(45,206,122,0.15);border-radius:14px;padding:1rem 1.5rem;margin-top:2rem;font-size:0.88rem;color:rgba(255,255,255,0.45);text-align:center}
 .desconto-note strong{color:var(--g4);font-family:var(--fd)}
 
-/* FORMULÁRIOS */
 .forms-sec{background:var(--g7)}
 .forms-header{text-align:center;margin-bottom:3rem}
 .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:940px;margin:0 auto}
@@ -188,15 +173,19 @@ section{padding:5.5rem 2.5rem}
 .fg label{display:block;font-family:var(--fd);font-size:0.72rem;font-weight:700;color:var(--ink4);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.3rem}
 .fg input,.fg select{width:100%;background:var(--g7);border:1.5px solid var(--ink6);border-radius:10px;padding:0.68rem 0.95rem;color:var(--ink);font-family:var(--fb);font-size:0.92rem;outline:none;transition:all 0.2s}
 .fg input:focus,.fg select:focus{border-color:var(--g3);background:white;box-shadow:0 0 0 3px rgba(45,206,122,0.1)}
-.fg select option{background:white}
-.fbtn{width:100%;font-family:var(--fd);font-weight:800;font-size:0.95rem;padding:0.9rem;border-radius:100px;border:none;cursor:pointer;transition:all 0.2s;margin-top:0.25rem;letter-spacing:0.02em;text-decoration:none;display:block;text-align:center}
+.fbtn{width:100%;font-family:var(--fd);font-weight:800;font-size:0.95rem;padding:0.9rem;border-radius:100px;border:none;cursor:pointer;transition:all 0.2s;margin-top:0.25rem;letter-spacing:0.02em;display:block;text-align:center}
 .fbtn.g{background:var(--g1);color:white}
 .fbtn.g:hover{background:var(--g2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(13,92,46,0.25)}
 .fbtn.d{background:var(--gold);color:white}
 .fbtn.d:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(200,148,10,0.3)}
+.fbtn:disabled{opacity:0.6;cursor:not-allowed;transform:none !important}
 .fnote{text-align:center;font-size:0.78rem;color:var(--ink5);margin-top:0.7rem;line-height:1.5}
 
-/* CTA FINAL */
+/* Toast */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(100px);background:var(--g1);color:white;font-family:var(--fd);font-weight:700;font-size:0.92rem;padding:0.85rem 2rem;border-radius:100px;box-shadow:0 8px 30px rgba(13,92,46,0.35);z-index:9999;transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast.error{background:#c0392b}
+
 .cta-sec{background:var(--g1);text-align:center;padding:6.5rem 2.5rem;position:relative;overflow:hidden}
 .cta-sec::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 25% 50%,rgba(255,255,255,0.07) 0%,transparent 50%),radial-gradient(circle at 75% 50%,rgba(255,255,255,0.05) 0%,transparent 50%)}
 .cta-sec h2{font-family:var(--fd);font-size:clamp(2rem,4vw,3.1rem);font-weight:800;letter-spacing:-0.04em;color:white;margin-bottom:1rem;position:relative}
@@ -208,7 +197,6 @@ section{padding:5.5rem 2.5rem}
 .btn-wo{background:transparent;color:white;font-family:var(--fd);font-weight:600;font-size:1rem;padding:0.95rem 2.25rem;border-radius:100px;border:2px solid rgba(255,255,255,0.3);cursor:pointer;transition:all 0.2s}
 .btn-wo:hover{border-color:rgba(255,255,255,0.6)}
 
-/* FOOTER */
 footer{background:var(--ink);padding:2.25rem 2.5rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.06)}
 .ft-logo{display:flex;align-items:center;gap:0.5rem}
 .ft-logo-img{width:28px;height:28px;object-fit:contain;filter:brightness(0) invert(1)}
@@ -216,11 +204,9 @@ footer{background:var(--ink);padding:2.25rem 2.5rem;display:flex;align-items:cen
 .ft-logo-text span{color:var(--g4)}
 footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-width:440px;text-align:right}
 
-/* ANIMATIONS */
 .fade-up{opacity:0;transform:translateY(20px);transition:opacity 0.55s ease,transform 0.55s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 
-/* RESPONSIVE */
 @media(max-width:920px){
   nav{padding:0.9rem 1.5rem}
   .hero-inner{grid-template-columns:1fr;gap:2.5rem;padding:2.5rem 1.5rem}
@@ -236,13 +222,13 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   h1{font-size:2.2rem}
   .dif-grid{grid-template-columns:1fr}
   .hero-cards{grid-template-columns:1fr}
-  .hcard.wide{grid-column:span 1}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
+<div class="toast" id="toast"></div>
+
 <nav id="nav">
   <a class="logo" href="#">
     <img class="logo-img" src="data:image/jpeg;base64,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+zvUWY1Zjn+cY/NcZVG038ZiKr1e3k3qmZ29D1oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q==" alt="Real Grana">
@@ -255,15 +241,12 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-blob1"></div>
-  <div class="hero-blob2"></div>
-  <div class="hero-dots"></div>
+  <div class="hero-blob1"></div><div class="hero-blob2"></div><div class="hero-dots"></div>
   <div class="hero-inner">
     <div class="hero-left">
       <div class="hero-tag">Preparatório Real Grana · OLITEF 2026</div>
-      <h1>Sua escola em <span class="wave accent">destaque.</span><br>Seu aluno <span class="accent">medalhista.</span></h1>
+      <h1>Sua escola em <span class="accent">destaque.</span><br>Seu aluno <span class="accent">medalhista.</span></h1>
       <p class="hero-sub">A <strong>Real Grana</strong> criou um preparatório completo para estudantes do Ensino Médio se destacarem na OLITEF — a Olimpíada do Tesouro Direto de Educação Financeira, organizada pelo Tesouro Nacional e pela B3.</p>
       <div class="hero-btns">
         <button class="btn-main" onclick="document.getElementById('inscricao').scrollIntoView({behavior:'smooth'})">Inscrever minha turma →</button>
@@ -276,63 +259,33 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
       </div>
     </div>
     <div class="hero-cards">
-      <div class="hcard fade-up">
-        <span class="hcard-icon">🎥</span>
-        <h4>Aulões ao vivo + gravados</h4>
-        <p>Aulas com os temas mais cobrados na OLITEF, ao vivo e em replay.</p>
-      </div>
-      <div class="hcard fade-up">
-        <span class="hcard-icon">📝</span>
-        <h4>Quizzes no formato da prova</h4>
-        <p>Questões no modelo exato da olimpíada com feedback instantâneo.</p>
-      </div>
-      <div class="hcard fade-up">
-        <span class="hcard-icon">📋</span>
-        <h4>Planos de aula prontos</h4>
-        <p>Material didático completo para o professor usar sem trabalho extra.</p>
-      </div>
-      <div class="hcard highlight fade-up">
-        <div class="hcard-medal">🏅 Estratégia de medalhas</div>
-        <span class="hcard-icon">🏆</span>
-        <h4>Roteiro para o pódio</h4>
-        <p>Método criado para maximizar sua pontuação no dia da prova.</p>
-      </div>
+      <div class="hcard fade-up"><span class="hcard-icon">🎥</span><h4>Aulões ao vivo + gravados</h4><p>Aulas com os temas mais cobrados na OLITEF, ao vivo e em replay.</p></div>
+      <div class="hcard fade-up"><span class="hcard-icon">📝</span><h4>Quizzes no formato da prova</h4><p>Questões no modelo exato da olimpíada com feedback instantâneo.</p></div>
+      <div class="hcard fade-up"><span class="hcard-icon">📋</span><h4>Planos de aula prontos</h4><p>Material completo para o professor usar sem trabalho extra.</p></div>
+      <div class="hcard highlight fade-up"><div class="hcard-medal">🏅 Estratégia de medalhas</div><span class="hcard-icon">🏆</span><h4>Roteiro para o pódio</h4><p>Método para maximizar sua pontuação no dia da prova.</p></div>
     </div>
   </div>
 </section>
 
-<!-- POR QUE A REAL GRANA -->
 <section class="porq-sec" id="sobre">
   <div class="wrap">
     <div class="porq-grid">
       <div class="fade-up">
         <div class="sec-label">Por que o Preparatório Real Grana</div>
-        <h2 class="sec-title">Preparação séria<br>para resultados <span class="accent" style="color:var(--g4)">reais</span></h2>
+        <h2 class="sec-title" style="color:white">Preparação séria<br>para resultados reais</h2>
         <p class="sec-sub">A OLITEF tem formato específico e cobra conteúdo que vai além do que é ensinado em sala de aula. Alunos que chegam preparados têm desempenho muito superior — e a Real Grana existe para garantir essa preparação.</p>
         <div class="porq-pillars">
-          <div class="pp">
-            <span class="pp-icon">🎯</span>
-            <div><h4>Foco 100% na OLITEF</h4><p>Todo o conteúdo foi construído a partir das edições anteriores da olimpíada, dos temas mais recorrentes e dos erros mais comuns dos participantes.</p></div>
-          </div>
-          <div class="pp">
-            <span class="pp-icon">📈</span>
-            <div><h4>Estratégia, não só conteúdo</h4><p>Além de ensinar o conteúdo, mostramos como se posicionar dentro da prova — quais questões priorizar e como gerenciar o tempo.</p></div>
-          </div>
-          <div class="pp">
-            <span class="pp-icon">🏫</span>
-            <div><h4>Solução completa para a escola</h4><p>Do professor ao aluno, a Real Grana oferece materiais, planos de aula e suporte para que qualquer escola possa participar com qualidade.</p></div>
-          </div>
+          <div class="pp"><span class="pp-icon">🎯</span><div><h4>Foco 100% na OLITEF</h4><p>Todo o conteúdo foi construído a partir das edições anteriores da olimpíada, dos temas mais recorrentes e dos erros mais comuns dos participantes.</p></div></div>
+          <div class="pp"><span class="pp-icon">📈</span><div><h4>Estratégia, não só conteúdo</h4><p>Além de ensinar o conteúdo, mostramos como se posicionar dentro da prova — quais questões priorizar e como gerenciar o tempo.</p></div></div>
+          <div class="pp"><span class="pp-icon">🏫</span><div><h4>Solução completa para a escola</h4><p>Do professor ao aluno, a Real Grana oferece materiais, planos de aula e suporte para que qualquer escola possa participar com qualidade.</p></div></div>
         </div>
       </div>
       <div class="fade-up">
         <div class="escola-box">
           <h3>Real Grana nas escolas</h3>
-          <p>A Real Grana é uma plataforma de educação financeira para escolas. O preparatório da OLITEF é uma das formas de levar esse conhecimento aos alunos de forma prática, motivadora e com resultado mensurável.</p>
+          <p>A Real Grana é uma plataforma de educação financeira para escolas. O preparatório da OLITEF é uma das formas de levar esse conhecimento de forma prática, motivadora e com resultado mensurável.</p>
           <div class="escola-tags">
-            <div class="etag">Educação financeira</div>
-            <div class="etag">Ensino Médio</div>
-            <div class="etag">Escola pública e privada</div>
-            <div class="etag">Resultados mensuráveis</div>
+            <div class="etag">Educação financeira</div><div class="etag">Ensino Médio</div><div class="etag">Escola pública e privada</div><div class="etag">Resultados mensuráveis</div>
           </div>
           <div class="stats-row">
             <div class="stat-mini"><div class="stat-mini-n">+5k</div><div class="stat-mini-l">alunos em 2025</div></div>
@@ -344,28 +297,23 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   </div>
 </section>
 
-<!-- DIFERENCIAIS -->
 <section class="dif-sec">
   <div class="wrap">
     <div class="dif-header">
-      <div class="fade-up">
-        <div class="sec-label">O que o preparatório oferece</div>
-        <h2 class="sec-title">Tudo que você<br>precisa para ir<br><span class="accent">ao pódio</span></h2>
-      </div>
-      <p class="sec-sub fade-up">Metodologia desenvolvida com foco exclusivo na OLITEF, construída a partir das edições anteriores e dos erros mais comuns dos participantes.</p>
+      <div class="fade-up"><div class="sec-label">O que o preparatório oferece</div><h2 class="sec-title">Tudo que você precisa<br>para ir ao <span class="accent">pódio</span></h2></div>
+      <p class="sec-sub fade-up">Metodologia com foco exclusivo na OLITEF, construída a partir das edições anteriores e dos erros mais comuns dos participantes.</p>
     </div>
     <div class="dif-grid">
       <div class="dc fade-up"><div class="dc-icon">🎥</div><h4>Aulões ao vivo + gravados</h4><p>Aulas aprofundadas sobre os temas mais cobrados, ao vivo e em replay para estudar no seu ritmo.</p></div>
       <div class="dc fade-up"><div class="dc-icon">📝</div><h4>Quizzes no formato da prova</h4><p>Exercícios no modelo exato da OLITEF para familiarizar o aluno e identificar pontos de melhora.</p></div>
       <div class="dc fade-up"><div class="dc-icon">🔁</div><h4>Exercícios resolvidos em vídeo</h4><p>Resolução passo a passo explicando o raciocínio — não só qual é a certa, mas por quê.</p></div>
       <div class="dc fade-up"><div class="dc-icon">📊</div><h4>Apresentações prontas</h4><p>Slides estruturados por módulo — prontos para o professor usar em sala sem preparação extra.</p></div>
-      <div class="dc fade-up"><div class="dc-icon">📋</div><h4>Planos de aula</h4><p>Planos detalhados alinhados ao edital da OLITEF, facilitando a integração com o calendário escolar.</p></div>
-      <div class="dc fade-up"><div class="dc-icon">🏆</div><h4>Estratégia de medalhas</h4><p>Roteiro estratégico de estudo criado para maximizar a pontuação no dia da prova.</p></div>
+      <div class="dc fade-up"><div class="dc-icon">📋</div><h4>Planos de aula</h4><p>Planos detalhados alinhados ao edital da OLITEF, fáceis de integrar ao calendário escolar.</p></div>
+      <div class="dc fade-up"><div class="dc-icon">🏆</div><h4>Estratégia de medalhas</h4><p>Roteiro estratégico de estudo para maximizar a pontuação no dia da prova.</p></div>
     </div>
   </div>
 </section>
 
-<!-- JORNADA -->
 <section class="jornada-sec">
   <div class="wrap" style="text-align:center">
     <div class="sec-label">Jornada do aluno</div>
@@ -373,14 +321,13 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   </div>
   <div class="journey">
     <div class="jstep fade-up"><div class="jnum">1</div><div class="jbody"><h4>Inscreva-se e entre no grupo do WhatsApp</h4><p>Preencha o formulário e receba o link do grupo da sua turma — onde você acessa a plataforma e recebe todas as orientações.</p></div></div>
-    <div class="jstep fade-up"><div class="jnum">2</div><div class="jbody"><h4>Assista aos aulões temáticos</h4><p>Conteúdo organizado por módulos: finanças pessoais, Tesouro Direto, investimentos, juros compostos e mais.</p></div></div>
+    <div class="jstep fade-up"><div class="jnum">2</div><div class="jbody"><h4>Assista aos aulões temáticos</h4><p>Conteúdo por módulos: finanças pessoais, Tesouro Direto, investimentos, juros compostos e mais.</p></div></div>
     <div class="jstep fade-up"><div class="jnum">3</div><div class="jbody"><h4>Pratique com os quizzes</h4><p>Centenas de questões no formato da prova — com feedback imediato e explicação de cada resposta.</p></div></div>
     <div class="jstep fade-up"><div class="jnum">4</div><div class="jbody"><h4>Estude com direcionamento</h4><p>Simulados completos com tempo cronometrado e resolução em vídeo para entender cada erro cometido.</p></div></div>
     <div class="jstep last fade-up"><div class="jnum">🏅</div><div class="jbody"><h4>Conquiste sua medalha na OLITEF</h4><p>Com a preparação certa, você entra na prova com confiança total — pronto para representar sua escola no pódio nacional.</p></div></div>
   </div>
 </section>
 
-<!-- DEPOIMENTOS -->
 <section class="dep-sec">
   <div class="wrap">
     <div class="sec-label">Quem já passou pelo preparatório</div>
@@ -414,7 +361,6 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   </div>
 </section>
 
-<!-- PLANOS -->
 <section class="planos-sec" id="planos">
   <div class="wrap">
     <div class="sec-label">Planos</div>
@@ -469,88 +415,74 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
         <a class="pbtn out" href="https://wa.me/5511973408493?text=Quero%20o%20preparat%C3%B3rio%20premium%20para%20minha%20escola" target="_blank">Falar com a equipe →</a>
       </div>
     </div>
-    <div class="desconto-note fade-up">🏫 <strong>Escolas que fecham múltiplos acessos ganham desconto especial.</strong> Fale com a equipe pelo WhatsApp para uma proposta personalizada.</div>
+    <div class="desconto-note fade-up">🏫 <strong>Escolas que fecham múltiplos acessos ganham desconto especial.</strong> Fale com a equipe pelo WhatsApp.</div>
   </div>
 </section>
 
-<!-- FORMULÁRIOS -->
 <section class="forms-sec" id="inscricao">
   <div class="wrap">
     <div class="forms-header">
       <div class="sec-label">Inscrição</div>
       <h2 class="sec-title">Escolha seu caminho<br><span class="accent">e entre para o grupo</span></h2>
-      <p class="sec-sub" style="max-width:540px;margin:0.5rem auto 0">Após a inscrição, você entra no grupo do WhatsApp da sua turma — onde recebe o acesso à plataforma e todas as orientações para começar.</p>
+      <p class="sec-sub" style="max-width:540px;margin:0.5rem auto 0">Após a inscrição, você entra no grupo do WhatsApp da sua turma — onde recebe o acesso à plataforma e todas as orientações.</p>
     </div>
     <div class="forms-grid">
-      <!-- PROFESSOR -->
       <div class="fcard green fade-up">
         <div class="ftag g">Para professores, coordenadores e gestores</div>
         <h3>Levar o preparatório para minha escola</h3>
-        <p class="fdesc">Inscreva-se e entre no grupo exclusivo. Você recebe materiais, planos de aula e o acesso para sua turma.</p>
-        <div class="fg"><label>Nome completo</label><input type="text" placeholder="Maria Silva"></div>
-        <div class="fg"><label>E-mail</label><input type="email" placeholder="prof@escola.edu.br"></div>
-        <div class="fg"><label>WhatsApp</label><input type="tel" placeholder="(11) 99999-9999"></div>
+        <p class="fdesc">Inscreva-se e entre no grupo exclusivo. Você recebe materiais, planos de aula e acesso para sua turma.</p>
+        <div class="fg"><label>Nome completo</label><input id="p-nome" type="text" placeholder="Maria Silva"></div>
+        <div class="fg"><label>E-mail</label><input id="p-email" type="email" placeholder="prof@escola.edu.br"></div>
+        <div class="fg"><label>WhatsApp</label><input id="p-wpp" type="tel" placeholder="(11) 99999-9999"></div>
         <div class="fg"><label>Perfil</label>
-          <select>
+          <select id="p-perfil">
             <option value="">Selecione seu perfil</option>
-            <option>Professor(a)</option>
-            <option>Coordenador(a)</option>
-            <option>Gestor escolar</option>
-            <option>Pai / Responsável</option>
+            <option>Professor(a)</option><option>Coordenador(a)</option><option>Gestor escolar</option><option>Pai / Responsável</option>
           </select>
         </div>
-        <div class="fg"><label>Nome da escola</label><input type="text" placeholder="Escola Estadual..."></div>
+        <div class="fg"><label>Nome da escola</label><input id="p-escola" type="text" placeholder="Escola Estadual..."></div>
         <div class="fg"><label>Tipo de escola</label>
-          <select>
-            <option value="">Selecione</option>
-            <option>Pública</option>
-            <option>Privada</option>
+          <select id="p-tipo">
+            <option value="">Selecione</option><option>Pública</option><option>Privada</option>
           </select>
         </div>
         <div class="fg"><label>Alunos estimados</label>
-          <select>
+          <select id="p-alunos">
             <option value="">Selecione</option>
-            <option>Até 30 alunos</option>
-            <option>31 a 100 alunos</option>
-            <option>100 a 300 alunos</option>
-            <option>+300 alunos</option>
+            <option>Até 30 alunos</option><option>31 a 100 alunos</option><option>100 a 300 alunos</option><option>+300 alunos</option>
           </select>
         </div>
-        <a class="fbtn g" href="https://wa.me/5511973408493?text=Quero%20o%20preparat%C3%B3rio%20premium%20para%20minha%20escola" target="_blank">📲 Entrar no grupo de professores →</a>
+        <button class="fbtn g" id="btn-prof" onclick="submitProf()">📲 Entrar no grupo de professores →</button>
         <p class="fnote">Você receberá os materiais e acessos à plataforma por e-mail.</p>
       </div>
-      <!-- ALUNO -->
       <div class="fcard gold-c fade-up">
         <div class="ftag d">Para alunos</div>
         <h3>Quero me preparar para a OLITEF</h3>
         <p class="fdesc">Inscreva-se e entre no grupo de alunos. Você recebe o acesso e começa a estudar imediatamente.</p>
-        <div class="fg"><label>Nome completo</label><input type="text" placeholder="João da Silva"></div>
-        <div class="fg"><label>E-mail</label><input type="email" placeholder="joao@email.com"></div>
-        <div class="fg"><label>WhatsApp</label><input type="tel" placeholder="(11) 99999-9999"></div>
-        <div class="fg"><label>Nome da escola</label><input type="text" placeholder="Nome da sua escola"></div>
+        <div class="fg"><label>Nome completo</label><input id="a-nome" type="text" placeholder="João da Silva"></div>
+        <div class="fg"><label>E-mail</label><input id="a-email" type="email" placeholder="joao@email.com"></div>
+        <div class="fg"><label>WhatsApp</label><input id="a-wpp" type="tel" placeholder="(11) 99999-9999"></div>
+        <div class="fg"><label>Nome da escola</label><input id="a-escola" type="text" placeholder="Nome da sua escola"></div>
         <div class="fg"><label>Tipo de escola</label>
-          <select>
-            <option value="">Selecione</option>
-            <option>Pública</option>
-            <option>Privada</option>
+          <select id="a-tipo">
+            <option value="">Selecione</option><option>Pública</option><option>Privada</option>
           </select>
         </div>
         <div class="fg"><label>Nível na OLITEF</label>
-          <select>
+          <select id="a-nivel">
             <option value="">Selecione seu nível</option>
             <option>Nível 1 — 6º e 7º anos</option>
             <option>Nível 2 — 8º e 9º anos</option>
             <option>Ensino Médio</option>
           </select>
         </div>
-        <a class="fbtn d" href="https://wa.me/5511973408493?text=quero%20o%20Mapa%20do%20Tesouro" target="_blank">📲 Entrar no grupo de alunos →</a>
+        <button class="fbtn d" id="btn-aluno" onclick="submitAluno()">📲 Entrar no grupo de alunos →</button>
         <p class="fnote">Você receberá os materiais e acessos à plataforma por e-mail.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
 <section class="cta-sec">
   <div class="wrap">
     <h2>O pódio começa<br><span class="accent">aqui, agora.</span></h2>
@@ -562,7 +494,6 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="ft-logo">
     <img class="ft-logo-img" src="data:image/jpeg;base64,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+zvUWY1Zjn+cY/NcZVG038ZiKr1e3k3qmZ29D1oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q==" alt="Real Grana">
@@ -572,19 +503,92 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
 </footer>
 
 <script>
-window.addEventListener("scroll",()=>{
-  document.getElementById("nav").classList.toggle("scrolled",window.scrollY>40)
-})
-function switchDep(tab,btn){
-  document.querySelectorAll(".dtab").forEach(b=>b.classList.remove("on"))
-  document.querySelectorAll(".dep-group").forEach(g=>g.classList.remove("on"))
-  btn.classList.add("on")
-  document.getElementById("dep-"+tab).classList.add("on")
+const SUPA_URL = "https://ssvrylmptawukysovkbo.supabase.co";
+const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzdnJ5bG1wdGF3dWt5c292a2JvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4NDIwOTAsImV4cCI6MjA5NTQxODA5MH0.6DfFynVsHidZnSK3MB2ouy6Q8urq4sYH3J6nWXc0mE4";
+
+function showToast(msg, isError) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.className = "toast" + (isError ? " error" : "") + " show";
+  setTimeout(() => t.className = "toast" + (isError ? " error" : ""), 3500);
 }
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")})
-},{threshold:0.1})
-document.querySelectorAll(".fade-up").forEach(el=>obs.observe(el))
+
+function val(id) { return document.getElementById(id).value.trim(); }
+
+async function insertSupabase(table, data) {
+  const res = await fetch(SUPA_URL + "/rest/v1/" + table, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "apikey": SUPA_KEY,
+      "Authorization": "Bearer " + SUPA_KEY,
+      "Prefer": "return=minimal"
+    },
+    body: JSON.stringify(data)
+  });
+  if (!res.ok) throw new Error(await res.text());
+}
+
+async function submitProf() {
+  const nome = val("p-nome"), email = val("p-email"), wpp = val("p-wpp"),
+        perfil = val("p-perfil"), escola = val("p-escola"),
+        tipo = val("p-tipo"), alunos = val("p-alunos");
+  if (!nome || !email || !wpp || !perfil || !escola || !tipo || !alunos) {
+    showToast("⚠️ Preencha todos os campos", true); return;
+  }
+  const btn = document.getElementById("btn-prof");
+  btn.disabled = true; btn.textContent = "Enviando...";
+  try {
+    await insertSupabase("leads_professores", {
+      nome, email, whatsapp: wpp, perfil, escola, tipo_escola: tipo, alunos_estimados: alunos
+    });
+    showToast("✅ Inscrição recebida! Verifique seu e-mail.");
+    ["p-nome","p-email","p-wpp","p-escola"].forEach(id => document.getElementById(id).value = "");
+    ["p-perfil","p-tipo","p-alunos"].forEach(id => document.getElementById(id).selectedIndex = 0);
+    setTimeout(() => { window.open("https://wa.me/5511973408493?text=Quero%20o%20preparat%C3%B3rio%20premium%20para%20minha%20escola","_blank"); }, 800);
+  } catch(e) {
+    showToast("❌ Erro ao enviar. Tente novamente.", true);
+  }
+  btn.disabled = false; btn.textContent = "📲 Entrar no grupo de professores →";
+}
+
+async function submitAluno() {
+  const nome = val("a-nome"), email = val("a-email"), wpp = val("a-wpp"),
+        escola = val("a-escola"), tipo = val("a-tipo"), nivel = val("a-nivel");
+  if (!nome || !email || !wpp || !escola || !tipo || !nivel) {
+    showToast("⚠️ Preencha todos os campos", true); return;
+  }
+  const btn = document.getElementById("btn-aluno");
+  btn.disabled = true; btn.textContent = "Enviando...";
+  try {
+    await insertSupabase("leads_alunos", {
+      nome, email, whatsapp: wpp, escola, tipo_escola: tipo, nivel_olitef: nivel
+    });
+    showToast("✅ Inscrição recebida! Verifique seu e-mail.");
+    ["a-nome","a-email","a-wpp","a-escola"].forEach(id => document.getElementById(id).value = "");
+    ["a-tipo","a-nivel"].forEach(id => document.getElementById(id).selectedIndex = 0);
+    setTimeout(() => { window.open("https://wa.me/5511973408493?text=quero%20o%20Mapa%20do%20Tesouro","_blank"); }, 800);
+  } catch(e) {
+    showToast("❌ Erro ao enviar. Tente novamente.", true);
+  }
+  btn.disabled = false; btn.textContent = "📲 Entrar no grupo de alunos →";
+}
+
+window.addEventListener("scroll", () => {
+  document.getElementById("nav").classList.toggle("scrolled", window.scrollY > 40);
+});
+
+function switchDep(tab, btn) {
+  document.querySelectorAll(".dtab").forEach(b => b.classList.remove("on"));
+  document.querySelectorAll(".dep-group").forEach(g => g.classList.remove("on"));
+  btn.classList.add("on");
+  document.getElementById("dep-" + tab).classList.add("on");
+}
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+}, {threshold: 0.1});
+document.querySelectorAll(".fade-up").forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
