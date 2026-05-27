@@ -545,7 +545,7 @@ async function submitProf() {
     showToast("✅ Inscrição recebida! Verifique seu e-mail.");
     ["p-nome","p-email","p-wpp","p-escola"].forEach(id => document.getElementById(id).value = "");
     ["p-perfil","p-tipo","p-alunos"].forEach(id => document.getElementById(id).selectedIndex = 0);
-    setTimeout(() => { window.open("chat.whatsapp.com/LWeJsIPyqinA5wxxGQOs6w","_blank"); }, 800);
+    setTimeout(() => { window.open("https://chat.whatsapp.com/LWeJsIPyqinA5wxxGQOs6w","_blank"); }, 800);
   } catch(e) {
     showToast("❌ Erro ao enviar. Tente novamente.", true);
   }
@@ -567,7 +567,7 @@ async function submitAluno() {
     showToast("✅ Inscrição recebida! Verifique seu e-mail.");
     ["a-nome","a-email","a-wpp","a-escola"].forEach(id => document.getElementById(id).value = "");
     ["a-tipo","a-nivel"].forEach(id => document.getElementById(id).selectedIndex = 0);
-    setTimeout(() => { window.open("chat.whatsapp.com/H7sDubEqCcbCK28x4D3Cw2","_blank"); }, 800);
+    setTimeout(() => { window.open("https://chat.whatsapp.com/H7sDubEqCcbCK28x4D3Cw2","_blank"); }, 800);
   } catch(e) {
     showToast("❌ Erro ao enviar. Tente novamente.", true);
   }
