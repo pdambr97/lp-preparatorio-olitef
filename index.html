@@ -4,6 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Preparatório Real Grana · OLITEF 2026</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1674794703539238');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1674794703539238&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -278,7 +296,7 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
     <div class="hero-left">
       <div class="hero-tag">Preparatório Real Grana · OLITEF 2026</div>
       <h1>Sua escola em <span class="accent">destaque.</span><br>Seu aluno <span class="accent">medalhista.</span></h1>
-      <p class="hero-sub">A <strong>Real Grana</strong> criou um preparatório completo para estudantes se destacarem na OLITEF — a Olimpíada do Tesouro Direto de Educação Financeira, organizada pelo Tesouro Nacional e pela B3.</p>
+      <p class="hero-sub">A <strong>Real Grana</strong> criou um preparatório completo para estudantes do Ensino Médio se destacarem na OLITEF — a Olimpíada do Tesouro Direto de Educação Financeira, organizada pelo Tesouro Nacional e pela B3.</p>
       <div class="hero-btns">
         <button class="btn-main" onclick="document.getElementById('inscricao').scrollIntoView({behavior:'smooth'})">Inscrever minha turma →</button>
         <button class="btn-ghost" onclick="document.getElementById('inscricao').scrollIntoView({behavior:'smooth'})">Quero me preparar</button>
@@ -316,7 +334,7 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
           <h3>Real Grana nas escolas</h3>
           <p>A Real Grana é uma plataforma de educação financeira para escolas. O preparatório da OLITEF é uma das formas de levar esse conhecimento de forma prática, motivadora e com resultado mensurável.</p>
           <div class="escola-tags">
-            <div class="etag">Educação financeira</div><div class="etag">Escola pública e privada</div><div class="etag">Resultados mensuráveis</div>
+            <div class="etag">Educação financeira</div><div class="etag">Ensino Médio</div><div class="etag">Escola pública e privada</div><div class="etag">Resultados mensuráveis</div>
           </div>
           <div class="stats-row">
             <div class="stat-mini"><div class="stat-mini-n">+5k</div><div class="stat-mini-l">alunos em 2025</div></div>
@@ -504,7 +522,7 @@ footer p{font-size:0.78rem;color:rgba(255,255,255,0.25);line-height:1.7;max-widt
             <option value="">Selecione seu nível</option>
             <option>Nível 1 — 6º e 7º anos</option>
             <option>Nível 2 — 8º e 9º anos</option>
-            <option>Nível 3 — Ensino Médio</option>
+            <option>Ensino Médio</option>
           </select>
         </div>
         <button class="fbtn d" id="btn-aluno" onclick="submitAluno()">📲 Realizar Inscrição →</button>
@@ -554,6 +572,10 @@ function showModal(tipo) {
     : "Sua inscrição foi recebida com sucesso!<br>Agora entre no grupo de <strong>alunos</strong> para receber seu acesso e começar a estudar imediatamente.";
   document.getElementById("modal-wpp-link").href = isProf ? WPP_PROF : WPP_ALUNO;
   document.getElementById("modal").classList.add("show");
+  // Meta Pixel — Lead
+  if (typeof fbq === "function") {
+    fbq('track', 'Lead', { content_name: isProf ? 'professor' : 'aluno' });
+  }
 }
 
 function closeModal() {
